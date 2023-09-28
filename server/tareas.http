@@ -1,0 +1,25 @@
+###Traer Tareas
+GET http://localhost:3000/api/tasks
+
+###Crear Tarea
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Nueva Tarea",
+    "description": "Nueva Descripcion",
+    "poster": "https://media.licdn.com/dms/image/C5612AQHZhWrDj6PnqQ/article-cover_image-shrink_600_2000/0/1596669484783?e=2147483647&v=beta&t=6SsfkARWKPIns2Hiol4Eb6PRjn4XMz5qj6d6qK4j568"    
+}
+
+###Modificar Tarea
+PUT  http://localhost:3000/api/tasks/1
+Content-Type: application/json
+
+{
+     "title": "Nueva Tarea",
+     "description": "Nueva Descripcion",
+     "poster": "www.url.com"  
+}
+
+###Eliminar Tarea
+DELETE http://localhost:3000/api/tasks/3
